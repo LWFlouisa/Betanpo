@@ -26,7 +26,7 @@ Examples of unacceptable behavior include:
   address, without their explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
-* using the project as a proxy for vague software idealogies like accelerationism and decelerationism, such as encouraging the project to slow down without expanding on what should not be produced. This creates a hostile working environment, without contributing to any kind of productivity.
+* using the project as a proxy for vague software idealogies like accelerationism and decelerationism, such as encouraging the project to slow down without expanding on what should not be produced. This creates a hostile working environment, without contributing to any kind of productivity. This includes but is not limited to organized campagins of software and architectural misrepresentation.
 
 ## Enforcement Responsibilities
 
