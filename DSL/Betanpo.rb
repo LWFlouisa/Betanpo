@@ -962,15 +962,15 @@ end
 ###############################################################################
 define_method :nombres do |a1, b1, c1, a2, b2, c2, a3, b3, c3|
   comparison_one = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
   
   comparison_two = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   comparison_tre = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
   
   comparison_one.call(a1, b1, c1)
@@ -980,15 +980,15 @@ end
 
 define_method :neg_nombres do |a1, b1, c1, a2, b2, c2, a3, b3, c3|
   neg_comparison_one = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
   
   neg_comparison_two = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   neg_comparison_tre = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./neg_nombres #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
   
   neg_comparison_one.call(a1, b1, c1)
@@ -998,15 +998,15 @@ end
 
 define_method :kosan do |a1, b1, c1, a2, b2, c2, a3, b3, c3|
   kosan_une = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   kosan_deux = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   kosan_trois = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./kosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   kosan_une.call(a1, b1, c1)
@@ -1016,15 +1016,15 @@ end
 
 define_method :nikosan do |a1, b1, c1, a2, b2, c2, a3, b3, c3|
   nikosan_une = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   nikosan_deux = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   nikosan_trois = Proc.new { |user_supplied, larger_num, smaller_num|
-    system("./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
+    system("cd Crystal; ./nikosan #{user_supplied} #{larger_num} #{user_supplied} #{smaller_num} #{user_supplied} #{smaller_num} #{larger_num}")
   }
 
   nikosan_une.call(a1, b1, c1)
@@ -1037,15 +1037,15 @@ define_method :maisettelingua do | discrete1, max_interval1, max_quip1, min_inte
                                    discrete3, max_interval3, max_quip3, min_interval3, min_quip3, maybe_quip3 |
 
   maisette_une = Proc.new { | discrete, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
+    system("cd Crystal; ./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
   }
   
   kmaisette_deux = Proc.new { | discrete, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
+    system("cd Crystal; ./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
   }
   
   maisette_trois = Proc.new { | discrete, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
+    system("cd Crystal; ./maisettelingua #{probability} #{max_interval} #{max_quip} #{min_interval} #{min_quip} #{maybe_quip}")
   }
   
   klingua_une.call(probability1,   max_interval1, max_quip1, min_interval1, min_quip1, maybe_quip1)
@@ -1058,15 +1058,15 @@ define_method :klingua do | probability1, max_interval1, max_quip1, min_interval
                             probability3, max_interval3, max_quip3, min_interval3, min_quip3, maybe_quip3 |
 
   klingua_une = Proc.new { | probability, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
+    system("cd Crystal; ./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
   }
   
   klingua_deux = Proc.new { | probability, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
+    system("cd Crystal; ./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
   }
   
   klingua_trois = Proc.new { | probability, max_interval, max_quip, min_interval, min_quip, maybe_quip |
-    system("./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
+    system("cd Crystal; ./kosanlingua #{probability} #{max_interval} '#{max_quip}' #{min_interval} '#{min_quip}' '#{maybe_quip}'")
   }
   
   print "BIANCA: "
@@ -1084,15 +1084,15 @@ end
 ###############################################################################
 define_method :evil_laugh do |a1, b1, a2, b2, a3, b3|
   laugh_one = Proc.new { |name, location|
-    system("./evil_laugh #{a1} #{b1}")
+    system("cd Crystal; ./evil_laugh #{a1} #{b1}")
   }
   
   laugh_two = Proc.new { |name, location|
-    system("./evil_laugh #{a2} #{b2}")
+    system("cd Crystal; ./evil_laugh #{a2} #{b2}")
   }
   
   laugh_tre = Proc.new { |name, location|
-    system("./evil_laugh #{a3} #{b3}")
+    system("cd Crystal; ./evil_laugh #{a3} #{b3}")
   }
 
   laugh_one.call(a1, b1)
@@ -1102,15 +1102,15 @@ end
 
 define_method :is_haunted do |a1, b1, c1, a2, b2, c2, a3, b3, c3|
   haunting_one = Proc.new { |a1, b1, c1|
-    system("./is_haunted #{a1} #{b1} #{c1}")
+    system("cd Crystal; ./is_haunted #{a1} #{b1} #{c1}")
   }
   
   haunting_two = Proc.new { |a2, b2, c2|
-    system("./is_haunted #{a2} #{b2} #{c2}")
+    system("cd Crystal; ./is_haunted #{a2} #{b2} #{c2}")
   }
   
   haunting_tre = Proc.new { |a3, b3, c3|
-    system("./is_haunted #{a3} #{b3} #{c3}")
+    system("cd Crystal; ./is_haunted #{a3} #{b3} #{c3}")
   }
 
   haunting_one.call(a1, b1, c1)
@@ -1123,15 +1123,15 @@ define_method :nu_anomaly do | a1, b1, width1_a, height1_a, width2_a, height_a,
                                a3, b3, width1_c, height1_c, width2_c, height_c|
 
   anomaly_one = Proc.new { | room_one, room_two, width1, height1, width2, height2 |
-    system("./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
+    system("cd Crystal; ./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
   }
   
   anomaly_two = Proc.new { | room_one, room_two, width1, height1, width2, height2 |
-    system("./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
+    system("cd Crystal; ./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
   }
   
   anomaly_tre = Proc.new { | room_one, room_two, width1, height1, width2, height2 |
-    system("./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
+    system("cd Crystal; ./nu_anomaly #{room_one} #{room_two} #{width1} #{height1} #{width2} #{height2}")
   }
   
   anomaly_one.call(a1, b1, width1_a, height1_a, width2_a, height_a)
