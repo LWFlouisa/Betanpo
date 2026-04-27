@@ -456,6 +456,13 @@ module Ahuzacos
   end
 end
 
+define_method :contrastif do | noun1, color_a1,
+                               noun2, color_a2,
+                               noun3, color_a3, color_b, color_c |
+
+  system("./contrastif #{noun1} #{color_a1} #{noun2} #{color_a2} #{noun3} #{color_a3} #{color_b} #{color_c}")
+end
+
 ## Basic qualifiers
 define_method :cette do |noun, color|
   "Cette #{noun} est #{color}."
