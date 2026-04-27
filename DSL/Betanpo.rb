@@ -1397,7 +1397,7 @@ define_method :ahucakabu do |b1, b2, b3, b4,
                              h1, h2, h3, h4,
                              a1, a2, a3, a4,
                              e1, e2, e3, e4,
-                             i1, i2. i3. i4.
+                             i1, i2, i3, i4,
                              o1, o2, o3, o4,
                              u1, u2, u3, u4|
 
@@ -1696,17 +1696,17 @@ define_method :ahucakabu_info do |b1, b2, b3, b4,
 end
 
 define_method :obelisk1 do | old_data |
-  system("./obelisk1 #{old_data}; ./scatter_ashes")
+  system("cd Crystal; ./obelisk1 #{old_data}; ./scatter_ashes")
 end
 
 define_method :obelisk2 do | old_data1, old_data2 |
-  system("./obelisk1 #{old_data1} #{old_data2}; ./scatter_ashes")
+  system("cd Crystal; ./obelisk1 #{old_data1} #{old_data2}; ./scatter_ashes")
 end
 
 define_method :obelisk3 do | old_data1, old_data2, old_data3 |
-  system("./obelisk1 #{old_data1} #{old_data2} #{old_data3}; ./scatter_ashes")
+  system("cd Crystal; ./obelisk1 #{old_data1} #{old_data2} #{old_data3}; ./scatter_ashes")
 end
 
 define_method :obelisk4 do | old_data1, old_data2, old_data3, old_data4 |
-  system("./obelisk1 #{old_data1} #{old_data2} #{old_data3} #{old_data4}; ./scatter_ashes")
+  system("cd Crystal; /obelisk1 #{old_data1} #{old_data2} #{old_data3} #{old_data4}; ./scatter_ashes")
 end
