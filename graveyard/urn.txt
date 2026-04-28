@@ -1,1 +1,5 @@
-test
+Cette pomme est rouge. Mais cette pomme est vert. sinon pomme n'est rouge ou vert, mais est jaune.
+Cette banane est rouge. Mais cette banane est vert. sinon banane n'est rouge ou vert, mais est jaune.
+Cette banane est rouge. Mais cette banane est vert. sinon banane n'est rouge ou vert, mais est jaune.
+Cette banane est rouge. Mais cette banane est vert. sinon banane n'est rouge ou vert, mais est jaune.
+Cette pomme est rouge. Mais cette pomme est vert. sinon pomme n'est rouge ou vert, mais est jaune.
