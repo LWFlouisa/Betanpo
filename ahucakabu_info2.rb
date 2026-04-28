@@ -6,6 +6,56 @@ def prime_rooms(first_prime, second_prime)
   "If room is number #{multiplicative} this can warp to rooms #{first_prime} and #{second_prime}."
 end
 
+pre_trained = [
+  [ :phrase_two,
+    'Lanos oiseau tsines ne deverrouillage lentement.',
+    'Le cabin tsines serrure lentement.',
+    'Le cabin petitees ne coupe tranquillement.',
+    0.6650775, 0.5, 0.3349225 ],
+ 
+  ## Composure is feminine. Ojijaku is derived from "Uncle Jack", or Jean Jacquez Waltz.
+  [ :phrase_fro,
+    'Ana grandpere petitees ne deverrouillage tranquillement.',
+    'Anos ojijaku sageses deverrouillage tranquillement.',
+    'Anu ojijaku roudyes ne coupe rapidement.',
+    0.94053591, 0.5, 0.05946409 ],
+
+  # Maison is feminine.
+  [ :phrase_fiv,
+    'Ana ecole sageses ne avoir assurement.',
+    'Anos ne ojijaku petitees ne serrure assurement.',
+    'Anu maison sucrees ne avoir tranquillement.',
+    0.868735983 ],
+
+  # Chat is masculine
+  [ :phrase_sev,
+    'La maison sucrees ne deverrouillage tranquillement.',
+    'La souris tsines serrure rapidement.',
+    'Lana chat roudyes ne deverrouillage rapidement.',
+    0.561761569 ],
+
+  ## Composure ( Ojijaku ) is feminine. Ojijaku is derived from "Uncle Jack", or Jean Jacquez Waltz.
+  [ :phrase_nin,
+    'Ana souris sucrees deverrouillage rapidement.',
+    'La oiseau petitees deverrouillage tranquillement.',
+    'Anu ojijaku roudyes ne coupe rapidement.',
+    0.04668406875 ],
+
+  ## School is masculine
+  [ :phrase_ten,
+    'La ojijaku roudyes deverrouillage assurement.',
+    'Lana cousinfille petitees ne serrure assurement.',
+    'Lanos ecole sucrees ne avoir assurement.',
+    0.103455 ],
+
+  ## Chien is feminine.
+  [ :phrase_elv,
+    'Ana chien tsines ne deverrouillage assurement.',
+    'Anos grandpere petitees ne avoir lentement.',
+    'Ana ecole sageses ne avoir assurement.',
+    0.310773375 ],
+]
+
 b = :set_one,    prime_rooms(3,  3), prime_rooms(5,  3), prime_rooms(7,  3) #, prime_rooms(11,  3)
 c = :set_two,    prime_rooms(3,  5), prime_rooms(5,  5), prime_rooms(7,  5) #, prime_rooms(11,  5)
 d = :set_three,  prime_rooms(3,  7), prime_rooms(5,  7), prime_rooms(7,  7) #, prime_rooms(11,  7)
