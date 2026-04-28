@@ -460,7 +460,7 @@ define_method :contrastif do | noun1, color_a1,
                                noun2, color_a2,
                                noun3, color_a3, color_b, color_c |
 
-  system("./contrastif #{noun1} #{color_a1} #{noun2} #{color_a2} #{noun3} #{color_a3} #{color_b} #{color_c}")
+  system("./contrastif #{noun1} #{color_a1} #{noun2} #{color_a2} #{noun3} #{color_a3} #{color_b} #{color_c} >> ./graveyard/urn.txt; ./scatter_ashes")
 end
 
 ## Basic qualifiers
@@ -2082,9 +2082,9 @@ define_method :ahucakabu_info do |b1, b2, b3, b4,
       ahucakabu_gain; ahucakabu_loss
     end
     
-    obelisk1("'#{$current_arg1}'")
-    obelisk1("'#{$current_arg2}'")
-    obelisk1("'#{$current_arg3}'")
+    obelisk1("#{$current_arg1}")
+    obelisk1("#{$current_arg2}")
+    obelisk1("#{$current_arg3}")
   end
 end
 
@@ -2101,7 +2101,7 @@ define_method :ahucakabu_info_ext do |b1, b2, b3, b4,
                                       u1, u2, u3, u4, search_space|
 
   search_space.times do
-    system("./ahucakabu '#{b1}' '#{b2}' '#{b3}' '#{b4}' '#{c1}' '#{c2}' '#{c3}' '#{c4}' '#{d1}' '#{d2}' '#{d3}' '#{d4}' '#{f1}' '#{f2}' '#{f3}' '#{f4}' '#{g1}' '#{g2}' '#{g3}' '#{g4}' '#{h1}' '#{h2}' '#{h3}' '#{h4}' '#{a1}' '#{a2}' '#{a3}' '#{a4}' '#{e1}' '#{e2}' '#{e3}' '#{e4}' '#{i1}' '#{i2}' '#{i3}' '#{i4}' '#{o1}' '#{o2}' '#{o3}' '#{o4}' '#{u1}' '#{u2}' '#{u3}' '#{u4}' >> graveyard/urn.txt; ./scatter_ashes")
+    system("./ahucakabu '#{b1}' '#{b2}' '#{b3}' '#{b4}' '#{c1}' '#{c2}' '#{c3}' '#{c4}' '#{d1}' '#{d2}' '#{d3}' '#{d4}' '#{f1}' '#{f2}' '#{f3}' '#{f4}' '#{g1}' '#{g2}' '#{g3}' '#{g4}' '#{h1}' '#{h2}' '#{h3}' '#{h4}' '#{a1}' '#{a2}' '#{a3}' '#{a4}' '#{e1}' '#{e2}' '#{e3}' '#{e4}' '#{i1}' '#{i2}' '#{i3}' '#{i4}' '#{o1}' '#{o2}' '#{o3}' '#{o4}' '#{u1}' '#{u2}' '#{u3}' '#{u4}' >> ./graveyard/urn.txt; ./scatter_ashes")
   end
 end
 
@@ -2119,4 +2119,8 @@ end
 
 define_method :obelisk4 do | old_data1, old_data2, old_data3, old_data4 |
   system("./obelisk4 #{old_data1} #{old_data2} #{old_data3} #{old_data4}; ./scatter_ashes")
+end
+
+define_method :scatter_ashes do
+  system("./scatter_ashes")
 end
