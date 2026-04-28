@@ -2088,6 +2088,23 @@ define_method :ahucakabu_info do |b1, b2, b3, b4,
   end
 end
 
+define_method :ahucakabu_info_ext do |b1, b2, b3, b4,
+                                      c1, c2, c3, c4,
+                                      d1, d2, d3, d4,
+                                      f1, f2, f3, f4,
+                                      g1, g2, g3, g4,
+                                      h1, h2, h3, h4,
+                                      a1, a2, a3, a4,
+                                      e1, e2, e3, e4,
+                                      i1, i2, i3, i4,
+                                      o1, o2, o3, o4,
+                                      u1, u2, u3, u4, search_space|
+
+  search_space.times do
+    system("./ahucakabu '#{b1}' '#{b2}' '#{b3}' '#{b4}' '#{c1}' '#{c2}' '#{c3}' '#{c4}' '#{d1}' '#{d2}' '#{d3}' '#{d4}' '#{f1}' '#{f2}' '#{f3}' '#{f4}' '#{g1}' '#{g2}' '#{g3}' '#{g4}' '#{h1}' '#{h2}' '#{h3}' '#{h4}' '#{a1}' '#{a2}' '#{a3}' '#{a4}' '#{e1}' '#{e2}' '#{e3}' '#{e4}' '#{i1}' '#{i2}' '#{i3}' '#{i4}' '#{o1}' '#{o2}' '#{o3}' '#{o4}' '#{u1}' '#{u2}' '#{u3}' '#{u4}' >> graveyard/urn.txt; ./scatter_ashes")
+  end
+end
+
 define_method :obelisk1 do | old_data |
   system("./obelisk1 #{old_data}; ./scatter_ashes")
 end
