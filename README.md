@@ -40,7 +40,7 @@ compare_neg_statements(:stopsigns_red,               "Stopsigns are usually red.
 #### Nombres And Neg Nombres
 This trains the agentic model to predict different prime values up to nine. The negative version predicts reductive versions of said primes.
 
-~~~
+~~~ruby
 require_relative "DSL/ParallelProcessing.rb"
 
 def do_numbers
@@ -81,7 +81,7 @@ do_numbers
 #### Kosan And Nikosan
 This operates similarly to Nombres but on a probabilistic basis: in practice I end up using these for measuring unconfidence rather than confidence.
 
-~~~
+~~~ruby
 require_relative "DSL/ParallelProcessing.rb"
 
 def do_continuous
