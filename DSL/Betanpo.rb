@@ -484,7 +484,7 @@ define_method :contrastif do | noun1, color_a1,
                                noun2, color_a2,
                                noun3, color_a3, color_b, color_c |
 
-  system("./contrastif #{noun1} #{color_a1} #{noun2} #{color_a2} #{noun3} #{color_a3} #{color_b} #{color_c} >> ./graveyard/urn.txt; ./scatter_ashes")
+  system("./contrastif '#{noun1}' '#{color_a1}' '#{noun2}' '#{color_a2}' '#{noun3}' '#{color_a3}' '#{color_b}' '#{color_c}' >> ./graveyard/urn.txt; ./scatter_ashes")
 end
 
 ## Basic qualifiers
@@ -1118,7 +1118,7 @@ end
   $current_information_c = current_information
 }
 
-def get_statistics(a1, a2, b1, b2, c1, c2)
+define_method  :get_statistics do |a1, a2, b1, b2, c1, c2|
   a = a1, a2
   b = b1, b2
   c = c1, c2
@@ -1166,7 +1166,7 @@ def get_statistics(a1, a2, b1, b2, c1, c2)
   $current_information = "#{current_label} #{current_definition}"
 end
 
-def get_neg_statistics(a1, a2, b1, b2, c1, c2)
+define_method :get_neg_statistics do |a1, a2, b1, b2, c1, c2|
   a = a1, a2
   b = b1, b2
   c = c1, c2
@@ -1214,7 +1214,7 @@ def get_neg_statistics(a1, a2, b1, b2, c1, c2)
   $current_information = "#{current_label} #{current_definition}"
 end
 
-def reasses
+define_method :reasses do
   if $current_probability > 0.999999999999999999
     $current_probability = 0.9 / $current_probability
   end
@@ -1240,7 +1240,7 @@ def reasses
   #$factored_probabilities = $factored_probabilityes.delete(2)
 end
 
-def reconsider
+define_method :reconsider do
   if $current_probability > 0.999999999999999999
     $current_probability = 0.9 / $current_probability
   end
@@ -1266,7 +1266,7 @@ def reconsider
   #$factored_probabilities = $factored_probabilityes.delete(2)
 end
 
-def dynamic_reward_allocation
+define_method :dynamic_reward_allocation do
   l1_reasses = "level one reasses"
   l2_reasses = "level two reasses"
   l3_reasses = "level tre reasses"
@@ -1313,7 +1313,7 @@ def dynamic_reward_allocation
   end
 end
 
-def dynamic_guillotine_allocation
+define_method :dynamic_guillotine_allocation do
   l1_reasses = "level one reasses"
   l2_reasses = "level two reasses"
   l3_reasses = "level tre reasses"
@@ -1360,7 +1360,7 @@ def dynamic_guillotine_allocation
   end
 end
 
-def dynamic_mode_switcher
+define_method :dynamic_mode_switcher do
   modes = [
     [["deposit", "deposit"], ["deposit", "extract"]],
     [["extract", "deposit"], ["extract", "extract"]],
@@ -1381,17 +1381,6 @@ def dynamic_mode_switcher
   else
     dynamic_guillotine_allocation
   end
-end
-
-def floating_finger(a, b)
-  right = :right_finger, a.split(" ")
-  left = :left_finger, b.split(" ")
-
-  floating = :floating_finger, right[1][1], left[1][0]
-
-  $floating = floating
-
-  "Floating finger: '#{floating[1]} #{floating[2]}'"
 end
 
 ###############################################################################
